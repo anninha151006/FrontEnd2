@@ -1,0 +1,94 @@
+body{
+    background: #9ab478;
+
+}
+
+.carrossel {
+    overflow: visible;
+    width: 100%;
+    position: relative;
+    margin-top: 50px;
+    padding: 50px 0; 
+    display: grid;
+    grid-auto-flow: column;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+}
+
+.track {
+    display: flex;
+    gap: 20px;
+    width: max-content;  
+    overflow: visible;
+  
+    align-items: center;
+    justify-content:center;
+    position: relative;
+    object-fit: cover;
+}
+
+.track .item {
+    position: relative;
+}
+
+.track .item:hover {
+    transform: scale(1.3) translateY(-10px);
+    z-index: 999;
+    transform: scale(2.05);
+
+}
+
+
+
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+
+.carrossel:hover .track {
+    animation-play-state: paused;
+}
+
+
+.track .item {
+    width: 361px;
+    height: 350px;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.4s ease, filter 0.4s ease;
+    scroll-snap-align: center;
+    border-radius: 40px;
+}
+
+
+.track .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.track .item:hover {
+    transform: scale(1.3) translateY(-10px);
+    z-index: 10;
+}
+
+.carrossel:hover img {
+    filter: brightness(0.5);
+}
+
+.carrossel img:hover {
+    filter: brightness(1);
+}
+
+.carrossel {
+    padding-bottom: 50px;
+}
+
