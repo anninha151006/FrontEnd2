@@ -28,11 +28,17 @@ body {
 .logo {
     position: absolute;
     left: 20px;
-    width: 40px; 
+    width: 40px;
     height: 60px;
     object-fit: cover;
 }
 
+.menu {
+    background-image: url("/imagens/menu.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
 
 .menu ul {
     display: flex;
@@ -99,7 +105,7 @@ body {
     justify-content: center;
     gap: 40px;
     flex-wrap: wrap;
-    align-items: stretch; 
+    align-items: stretch;
 }
 
 .card-solo {
@@ -107,13 +113,15 @@ body {
     background: #fff;
     border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     text-align: center;
 
-    display: flex; /* importante */
+    display: flex;
+    /* importante */
     flex-direction: column;
-    justify-content: space-between; /* distribui igual */
+    justify-content: space-between;
+    /* distribui igual */
 }
 
 .card-solo:hover {
