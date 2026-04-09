@@ -58,8 +58,14 @@ body {
     width: 40px; 
     height: 60px;
     object-fit: cover;
-}
 
+}
+.menu {
+    background-image: url("/imagens/logo.jpeg");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
 .menu ul {
     display: flex;
     justify-content: center;
